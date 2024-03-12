@@ -121,22 +121,76 @@
 //     return result;
 // }
 
-let sayHi = function (){
-    alert("hello");
-}
+// let sayHi = function (){
+//     alert("hello");
+// }
 
+
+// function ask (question, yes, no){
+//     if(confirm (question)) yes()
+//     else no();
+// }
+
+// function showOK(){
+//     alert ("you agreed" );
+// }
+
+// function showCancel(){
+//     alert ("you cancled the execution");
+// }
+
+// ask ("do you agree?", showOK, showCancel);
+
+// function ask(question, yes, no){
+//     if ()
+// }
+
+// let func = (arg1, arg2,arg3) => sada;
+
+// let sum = (a,b) => a +b;
+
+// alert ( sum(1,2) );
+
+// let double = n => n*2;
+
+// alert (double (3));
+
+// let sayHi = () => alert ("hello!")
+
+// sayHi()
+
+ 
+
+// let age = prompt ("what is your age?", 18);
+
+// let welcome = (age > 18)?
+// ()=> alert ('hello'):
+// ()=> alert ('greetings!');
+
+// welcome();
+
+
+// let sum = (a,b) => {
+//     let result = a + b;
+//     return result;
+// };
+
+// alert (sum(1, 2));
 
 function ask (question, yes, no){
-    if(confirm (question)) yes()
+    if (confirm (question)) yes();
     else no();
 }
 
-function showOK(){
-    alert ("you agreed" );
-}
+ask(
+    "do you agree?",
+    function() {alert ("You agreed."); },
+    function() { alert ('you cancled the execution.')}
+)
 
-function showCancel(){
-    alert ("you cancled the execution");
-}
+let ask = (question, yes, no) => confirm (quesiton) ? yes(): no();
 
-ask ("do you agree?", showOK, showCancel);
+ask(
+    () => console.log('agree'),
+    () => console.log ('you interupted execution')
+);
